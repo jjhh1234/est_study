@@ -1,0 +1,38 @@
+<!--문서의 타입이 무엇인지 알려줌(왜 문서일까? - html문법을 통해서 작성된 내용은 문서로 인식을하자)
+우리가 쓰는 워드프로세스 있져? 문서를 만들떄는 프로그램을 쓰자나요. html이라는 언어의 목적도 이런 문서를 작성하는 것이다.
+다만 워드프로세스는 위젯을 제공한다면 html은 하나하나 작성을 해야한다고 본다.
+모든사람이 같은 포맷으로 똑같은 문서를 보기위해 개발됨.. 그럼 html전에는 포맷이 없었나? - 아니 있었음. html은 90년대 발명
+지금은 리눅스 , 맥, 윈도우를 쓰는데 예전에는 훨씬다양했음. 과거에는 하드웨어를 만드는 회사들이 많아서 컴퓨터 끼리 호환이 굉장히 어려줬음
+메모리 카드들을 이컴퓨터 저컴퓨터 옮기며 했는데 어떤 컴퓨터에 넣으니 크기가 안맞거나, 운영체제에서 사용하지 않는 포맷으로 쓰여져서 안되는 경우가
+많아서 어려움이 있었음. html이라는 파일을 http로 주고 받음 이것을 어떻게 저장하고 공유할것이냐 방법을 정하는게 URL
+결국 doctype은 문서이고 문서의 형식을 의미한다. 아래문장을 DTD라고도함-->
+<!doctype html>
+<!--lang 은 언어 en 은 영어 약자/ 페이지의 주 언어를 설정하는 중요한 기능이다-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<!--   캐릭터셋의 약자 이 페이지에서 사용되는 유니코드 -->
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<!--   화면 넓이는 기기의 넓이와 같다/ 유저가 크기를 조절하는게 가능한가 - no라고 되어있다(화면이 확대혹은 축소가 가능한가?)// 초기크기는 1.0인데 2로 바꾸면 두개가됨// 화면을 축소 1이 기본겂  -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!--   이 메타태그는 인터넷 익스플로러 에 맞춰저이ㅆ는 페이지다. - 없어도 상관없다.  -->
+    <title>Document</title>
+    <style>
+        p{
+            background-color: teal;
+        }
+    </style>
+</head>
+<body>
+<!--블록요소는 부모요소만큼 자신의 크기를 가진다. 라인별로 자신의 크기를 가짐 태그가 같을 경우 같은라인에 적혀짐 다르면 아래라인에 자신의 크기 가짐-->
+<div><span>Lorem ipsum dolor sit amet,</span></div>
+<span>hello</span>
+<button>button</button>
+<ol>
+    <li>Introduction</li>
+    <li>List of Grievances</li>
+    <li>Conclusion</li>
+</ol>
+</body>
+</html>
